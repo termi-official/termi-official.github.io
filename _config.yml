@@ -8,6 +8,4 @@ url: "https://termi-official.github.io" # the base hostname & protocol for your 
 github_username:  termi-official
 
 # Build settings
-assets:
-    sources: _fonts
 markdown: kramdown
