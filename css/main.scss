@@ -26,14 +26,13 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-
-// Import partials from the `minima` theme.
-@import "architect";
+.navbar-nav {
+    display:table;
+    width:100%;
+    margin: 0;
+}
+.navbar-nav > li {
+    float:none;
+    display:table-cell;
+    text-align:center;
+}

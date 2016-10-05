@@ -1,13 +1,13 @@
 # Site settings
 title: Software Science
+highlighter: true
 description: > # this means to ignore newlines until "baseurl:"
-    # A blog about how modern game engines work - mixed with analyses about technologies,
-    # architecture and performance.
     A blog about computer science and software engineering. My focus is on game engines architecture, programming language theory and diagnostics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://termi-official.github.io" # the base hostname & protocol for your site
 github_username:  termi-official
 
 # Build settings
+assets:
+    sources: _fonts
 markdown: kramdown
-theme: architect
