@@ -24,4 +24,4 @@ github_username:  termi-official
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: architect
