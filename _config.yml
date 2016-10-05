@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Software Science
-email: termi-official@github.com
+email: termi-official@users.noreply.github.com
 description: > # this means to ignore newlines until "baseurl:"
-    Informations about how modern game engines work - mixed with analyses about technologies,
+    A blog about how modern game engines work - mixed with analyses about technologies,
     architecture and performance.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://termi-official.github.io" # the base hostname & protocol for your site
