@@ -1,22 +1,74 @@
 ---
-title: Home
-layout: default
+title: Overview
+layout: basic
 ---
-<div id="featured">
+
+<!-- main-matter -->
+<div id="main-matter">
+	<div class="container">
+        <div class="row">
+            <section>
+                <h1>This page is under construction!</h1>
+                <h2>Welcome, stray soul.</h2>
+                <p>My name is Dennis and on this page I share some thoughts trough a blog and some of my projects. Some of the blog posts directly relate und supplement projects, but my primary aim for the blog section is to release general purpose stuff for anyone interested in software engineering and computer science. A bit to myself, I am an applied computer scientist from Germany with strong background in C++ and game engines. In my free time I engage a vast amount of problems from very different scientific branches, ranging from computer graphics over mechanics to computational medicine.</p>
+            </section>
+        </div>
+		<div class="row centered">
+			<section class="col-md-4">
+				<span class="pennant"><i class="fa fa-heartbeat"></i></span>
+				<h3>Infrastructure Diagnostics</h3>
+				<p>Modern software projects range from a few thousand to multi-million lines of code. They all have a common natural predator: Bugs.</p>
+                <button type="button" class="btn btn-lg btn-primary disabled" href="#">Read More</button>
+			</section>
+			<section class="col-md-4">
+				<span class="pennant"><i class="fa fa-cogs"></i></span>
+				<h3>Game Engine Architecture</h3>
+				<p>People are reinventing the wheel on a daily basis when they develop games, while their complexity and cost tend to explode. We need a paradigm shift. Now!</p>
+                <button type="button" class="btn btn-lg btn-primary disabled" href="#">Read More</button>
+			</section>
+			<section class="col-md-4">
+				<span class="pennant"><i class="fa fa-recycle"></i></span>
+				<h3>Theoretical Foundation</h3>
+				<p>If all you have is a hammer, everything looks like a nail. Whenever you look into software nowadays, hammers seem to had closeout sale.</p>
+                <button type="button" class="btn btn-lg btn-primary disabled" href="#">Read More</button>
+			</section>
+		</div>
+	</div>
 </div>
 
+<!-- showcase -->
 <div id="showcase">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<div class="container">
+    	<div class="card-deck-wrapper">
+    	  <div class="card-deck">
+    	    <div class="card card-inverse">
+    	      <!--<img class="card-img-top" data-src="..." alt="Card image cap">-->
+    	      <div class="card-block">
+    	        <h4 class="card-title">Newest</h4>
+    	        <p class="card-text">Newest post/project/stuff will be presented in this tile.</p>
+    	        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    	      </div>
+    	    </div>
+    	    <div class="card card-inverse">
+    	      <!--<img class="card-img-top" data-src="..." alt="Card image cap">-->
+    	      <div class="card-block">
+    	        <h4 class="card-title">Highlight</h4>
+    	        <p class="card-text">Some highlight can be found will be presented in this tile.</p>
+    	        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    	      </div>
+    	  </div>
+    		<div class="card card-inverse">
+    	      <!--<img class="card-img-top" data-src="..." alt="Card image cap">-->
+    	      <div class="card-block">
+    	        <h4 class="card-title">Random</h4>
+    	        <p class="card-text">What about a random one?</p>
+    	        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    	      </div>
+    	    </div>
+    	  </div>
+    	</div>
+	</div>
 </div>
+
+
+<!-- about us -->

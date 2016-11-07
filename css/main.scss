@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+
+
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -26,13 +28,188 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-.navbar-nav {
+
+$background-image-path: "/none.jpeg";
+
+
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "font-awesome",
+        "bootstrap/bootstrap";
+
+
+.social-media-list i {
+    font-size: 1.75em;
+}
+
+
+// -----------------------------------------
+// header
+// -----------------------------------------
+
+#site-header
+{
+    background: url($background-image-path) no-repeat bottom center;
+    background-color: rgb(48,48,48);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+#site-header > nav
+{
+    background: rgba(0,0,0,.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 40px;
+    padding:0;
+    @extend %clearfix;
+}
+
+
+#site-header ul {
     display:table;
+    table-layout: fixed;
     width:100%;
     margin: 0;
+    padding: 0;
 }
-.navbar-nav > li {
-    float:none;
+
+
+#site-header ul > li {
     display:table-cell;
     text-align:center;
+    border-right: 1px solid;
+    border-color: rgba(255,255,255,.1);
+}
+
+
+#site-header ul > li:last-child
+{
+    border-right: 0;
+}
+
+
+#site-header a,
+{
+    display: inline-block;
+    padding: 0.5em 1.1em;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    outline: 0;
+    color: #FFF;
+}
+
+#site-header > .logo
+{
+    padding-bottom: 40px;
+    font-size: 44px;
+    font-weight: bolder;
+    color: black;
+}
+
+.nav-active-category {
+    text-decoration: underline !important;
+}
+
+// -----------------------------------------
+// footer
+// -----------------------------------------
+#site-footer
+{
+    text-align: center;
+    background: url($background-image-path) no-repeat center center;
+    background-color: #333;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 1px;
+    margin: 0;
+}
+
+
+.fav-quote
+{
+    font-weight: 300;
+    border: 0px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    color: rgba(0,0,0,.8);
+    margin: 3em 1em;
+    padding: 1em 2em;
+    text-align:center;
+    font-size: 1.5em;
+}
+
+.appendix
+{
+    background-color: black;
+    padding-top: 30px;
+    width:100%;
+    margin:0;
+}
+
+
+
+// -----------------------------------------
+// main matter
+// -----------------------------------------
+#main-matter
+{
+    background-color: rgb(220,220,220);
+    padding: 3em 5em;
+}
+
+#main-matter .row
+{
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+#main-matter .centered
+{
+    text-align: center;
+}
+
+#showcase
+{
+    @extend %clearfix;
+    padding: 3em 0em;
+    background-color: rgb(255,255,255);
+}
+
+#showcase .card-deck
+{
+    margin: 1em;
+}
+
+#showcase .card
+{
+    padding: 1em;
+    background-color: #666;
+    border-color: #666;
+}
+
+.pennant > i
+{
+    font-size: 4em;
+}
+
+#page-content
+{
+    @extend %clearfix;
 }

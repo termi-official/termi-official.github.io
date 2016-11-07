@@ -1,0 +1,21 @@
+{% comment %} encoding {% endcomment %}
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ site.title | escape }} {% if page.section %} - {{ page.section | escape }}{% endif %} {% if page.title %} - {{ page.title | escape }}{% endif %}</title>
+
+{% comment %} search engine optimization {% endcomment %}
+<meta name="description" content="
+  {% if page.description %}
+      {{ page.description }}
+  {% else %}
+      {{ site.description }}
+  {% endif %}">
+
+
+<meta name="keywords" content="game engines, computer science, software engineering, programming, game programming, game development, modern software architecture" />
+
+<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">

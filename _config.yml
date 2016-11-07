@@ -2,10 +2,11 @@
 title: Software Science
 highlighter: true
 description: > # this means to ignore newlines until "baseurl:"
-    A blog about computer science and software engineering. My focus is on game engines architecture, programming language theory and diagnostics.
+    A blog about computer science and software engineering. My focus is on game engine architecture, programming language theory and diagnostics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://termi-official.github.io" # the base hostname & protocol for your site
 github_username:  termi-official
+email: termi-official@users.noreply.github.com
 
 # Build settings
 markdown: kramdown
