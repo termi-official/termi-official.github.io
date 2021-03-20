@@ -2,47 +2,93 @@
 title: Overview
 layout: basic
 ---
-
-<!-- main-matter -->
 <div id="main-matter">
 	<div class="container">
-        <div class="row">
-            <section>
-                <h1>This page is under construction!</h1>
-                <h2>Welcome, stray soul.</h2>
-                <p>My name is Dennis and on this page I share some thoughts trough a blog and some of my projects. Some of the blog posts directly relate und supplement projects, but my primary aim for the blog section is to release general purpose stuff for anyone interested in software engineering and computer science. A bit to myself, I am an applied computer scientist from Germany with strong background in C++ and game engines. In my free time I engage a vast amount of problems from very different scientific branches, ranging from computer graphics over biomechanics to computational medicine.</p>
-            </section>
-        </div>
+		<div class="row">
+			<div class="col col-md-8">
+				<center><h1><b>Dennis</b> Ogiermann</h1></center>
+				<section>
+					<p>
+						My name is Dennis Ogiermann and I am a computer scientist specialized in the branch of computational cardiology within the area of scientific computing.
+						Currelty I am working at the <a href="http://www.lkm.rub.de/">chair of continuum mechanics</a> at the <a href="https://www.ruhr-uni-bochum.de">Ruhr-University Bochum</a>.
+					</p>
+					<p>
+						Together with researchers from a multitude of disciplines I engage interesting and sometimes interdisciplinary problems from various scientific branches, ranging from computer graphics over biomechanics, biofabrication, robotics to computational medicine.
+						Below I give a brief non-technical overview on some areas I engage, together with some motivation.
+						However, to those who are interested in technical details, my main research areas are the development and investigation of <b>verified efficient numerical methods for time-dependent partial differential equations</b>, <b>scale-bridging validation of organ-level models in cardiology</b> and <b>software systems for distributed multiphysics problems on heterogeneous hardware</b>.
+					</p>
+				</section>
+			</div>
+			<div class="col col-sm-4">
+				<img style="height:auto; border-radius: 50%;max-width:100%;
+				max-height:100%; box-shadow: 0 0 8px 8px white inset; border: 1px solid gray" src="/assets/img/profile.jpeg">
+			</div>
+		</div>
 		<div class="row centered">
 			<section class="col-md-4">
 				<span class="pennant"><i class="fa fa-heartbeat"></i></span>
-				<h3>Infrastructure Diagnostics</h3>
-				<p>Modern software project's codebases range from a few thousand to multi-million lines. They all have a common natural predator: Bugs. Let's deal with them more systematically.</p>
-                <button type="button" class="btn btn-lg btn-primary disabled" href="#">Read More</button>
-			</section>
+				<h3>Computational Medicine</h3>
+				<p>
+					Some diseases are inherently hard to handle due to the complex interplay of different systems at different scales.
+					Modeling and simulation allows an investigation of pathological mechanisms, which can be of outstanding help to develop therapies.
+				</p>
+            </section>
+			<section class="col-md-4">
+				<span class="pennant"><i class="fa fa-tasks"></i></span>
+				<h3>Efficient Test-Driven Software Development</h3>
+				<p>
+					Efficiency in simulation software ca be seen twofold.
+					On the one hand we want to be fast in development and on the other hand we want our developed software to be fast.
+				</p>
+            </section>
+			<section class="col-md-4">
+				<span class="pennant"><i class="fa fa-recycle"></i></span>
+				<h3>Next-Gen Simulation Techniques</h3>
+				<p>
+					Many simulations systems have trendemous potential to be sped up.
+					We often can increasing cache efficiency, clever data reusage, adaptivity, offloading or specialized solvers.
+				</p>
+            </section>
+		</div>
+		<div class="row centered">
+			<section class="col-md-4">
+				<span class="pennant"><i class="fa fa-stethoscope"></i></span>
+				<h3>Software Diagnostics</h3>
+				<p>
+					Modern software project's codebases range from a few thousand to multi-million lines.
+					They all have a common natural predator: Bugs.
+					Let's deal with them more systematically.
+				</p>
+            </section>
 			<section class="col-md-4">
 				<span class="pennant"><i class="fa fa-cogs"></i></span>
 				<h3>Game Engine Architecture</h3>
-				<p>People are reinventing the wheel on a daily basis when they develop games, while their complexity and cost tend to explode. We need a paradigm shift. Now!</p>
-                <button type="button" class="btn btn-lg btn-primary disabled" href="#">Read More</button>
-			</section>
+				<p>
+					People are reinventing the wheel on a daily basis when they develop games, while their complexity and cost tend to explode.
+					We need a paradigm shift.
+					Now!
+				</p>
+            </section>
 			<section class="col-md-4">
-				<span class="pennant"><i class="fa fa-recycle"></i></span>
+				<span class="pennant"><i class="fa fa-pencil"></i></span>
 				<h3>Theoretical Foundation</h3>
-				<p>If all you have is a hammer, everything looks like a nail. Whenever you look into software nowadays, hammers seem to had closeout sale over the last decade.</p>
-                <button type="button" class="btn btn-lg btn-primary disabled" href="#">Read More</button>
-			</section>
+				<p>
+					If all you have is a hammer, everything looks like a nail.
+					Whenever you look into software nowadays, hammers seem to had closeout sale over the last decade.
+				</p>
+            </section>
 		</div>
 	</div>
 </div>
 
 <!-- showcase -->
+<!--
 <div id="showcase">
 	<div class="container">
     	<div class="card-deck-wrapper">
     	  <div class="card-deck">
     	    <div class="card card-inverse">
-    	      <!--<img class="card-img-top" data-src="..." alt="Card image cap">-->
+    	      <img class="card-img-top" data-src="..." alt="Card image cap">
     	      <div class="card-block">
     	        <h4 class="card-title">Newest</h4>
     	        <p class="card-text">Newest post/project/stuff will be presented in this tile.</p>
@@ -50,7 +96,7 @@ layout: basic
     	      </div>
     	    </div>
     	    <div class="card card-inverse">
-    	      <!--<img class="card-img-top" data-src="..." alt="Card image cap">-->
+    	      <img class="card-img-top" data-src="..." alt="Card image cap">
     	      <div class="card-block">
     	        <h4 class="card-title">Highlight</h4>
     	        <p class="card-text">Some highlight can be found will be presented in this tile.</p>
@@ -58,7 +104,7 @@ layout: basic
     	      </div>
     	  </div>
     		<div class="card card-inverse">
-    	      <!--<img class="card-img-top" data-src="..." alt="Card image cap">-->
+    	      <img class="card-img-top" data-src="..." alt="Card image cap">
     	      <div class="card-block">
     	        <h4 class="card-title">Random</h4>
     	        <p class="card-text">What about a random one?</p>
@@ -69,6 +115,4 @@ layout: basic
     	</div>
 	</div>
 </div>
-
-
-<!-- about us -->
+-->

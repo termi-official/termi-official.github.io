@@ -3,8 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -46,8 +44,7 @@ $background-image-path: "/none.jpeg";
         "base",
         "layout",
         "syntax-highlighting",
-        "font-awesome",
-        "bootstrap/bootstrap";
+        "font-awesome";
 
 
 .social-media-list i {
@@ -61,7 +58,7 @@ $background-image-path: "/none.jpeg";
 
 #site-header
 {
-    background: url($background-image-path) no-repeat bottom center;
+    //background: url($background-image-path) no-repeat bottom center;
     background-color: rgb(48,48,48);
     background-attachment: fixed;
     background-size: cover;
@@ -133,7 +130,7 @@ $background-image-path: "/none.jpeg";
 #site-footer
 {
     text-align: center;
-    background: url($background-image-path) no-repeat center center;
+    //background: url($background-image-path) no-repeat center center;
     background-color: #333;
     background-attachment: fixed;
     background-size: cover;
@@ -170,6 +167,7 @@ $background-image-path: "/none.jpeg";
 // -----------------------------------------
 #main-matter
 {
+    font-family: $base-font-family;
     background-color: rgb(220,220,220);
     padding: 3em 5em;
 }
@@ -212,4 +210,9 @@ $background-image-path: "/none.jpeg";
 #page-content
 {
     @extend %clearfix;
+}
+
+.post
+{
+    padding: 3em 5em;
 }
