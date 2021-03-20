@@ -1,8 +1,9 @@
 # Site settings
 title: Software Science
-highlighter: true
+highlighter: rouge
 description: > # this means to ignore newlines until "baseurl:"
-    A blog about computer science and software engineering. My focus is on game engine architecture, programming language theory and diagnostics.
+    Personal website of Dennis Ogiermann with his blog about computer science and software engineering aspects of simulation systems.
+    A variety of topics from game engine architecture over programming language theory and numerical analysis are covered.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://termi-official.github.io" # the base hostname & protocol for your site
 github_username:  termi-official
