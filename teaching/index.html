@@ -1,0 +1,42 @@
+---
+layout: page
+title: Teaching
+---
+
+<div class="row-centered">
+  <p>
+    <h2>
+      <!--I am currently looking for motivated students interested in bachelor or master theses!-->
+    </h2>
+  </p>
+
+  <h2 class="centered">Supervised Theses</h2>
+    {% assign supervised_theses_by_year = site.data.supervised_theses | group_by: 'year' | sort: 'month' | reverse %}
+    {% for thesis_group in supervised_theses_by_year %}
+    <h3 class="centered">{{ thesis_group.name }}</h3>
+    {% for thesis in thesis_group.items %}
+    <section class="card card-inverse bg-dark text-light" style="margin:1em;">
+      <div class="card-body">
+        <h4 class="card-title">{{thesis.title}}</h4>
+        {{thesis.author}} <br> {{thesis.type}}, {{thesis.program}},  {{thesis.affiliation}}
+      </div>
+    </section>
+    {% endfor %}
+    <br>
+    {% endfor %}
+  <br>
+  <h2 class="centered">Supervised Projects</h2>
+  {% assign supervised_projects_by_year = site.data.supervised_projects | group_by: 'year' | sort: 'month' | reverse %}
+    {% for projects_group in supervised_projects_by_year %}
+    <h3 class="centered">{{ projects_group.name }}</h3>
+    {% for project in projects_group.items %}
+    <section class="card card-inverse bg-dark text-light" style="margin:1em;">
+      <div class="card-body">
+        <h4 class="card-title">{{project.title}}</h4>
+        {{project.authors}} <br> {{project.type}}, {{project.program}}, {{project.affiliation}}
+      </div>
+    </section>
+    {% endfor %}
+    <br>
+    {% endfor %}
+</div>
