@@ -146,10 +146,10 @@ $background-image-path: "/none.jpeg";
     border-top: 1px solid rgba(255,255,255,.1);
     border-bottom: 1px solid rgba(255,255,255,.1);
     color: rgba(0,0,0,.8);
-    margin: 3em 1em;
+    margin: 1.5em 1em;
     padding: 1em 2em;
     text-align:center;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .appendix
@@ -170,6 +170,7 @@ $background-image-path: "/none.jpeg";
     font-family: $base-font-family;
     background-color: rgb(220,220,220);
     padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 #main-matter .row
